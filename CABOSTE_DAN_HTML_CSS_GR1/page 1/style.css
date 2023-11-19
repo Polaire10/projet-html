@@ -75,7 +75,7 @@ h2 {
 .columns {
     display: flex;
 }
-/* ... Autres styles ... */
+
 .column {
     opacity: 0;
     transform: translateY(-300px);
@@ -94,7 +94,7 @@ h2 {
     }
 
     .column {
-        max-width: 100%; /* Ajuste la largeur des colonnes pour s'adapter à l'écran */
+        max-width: 100%; 
         margin-right: 0;
         margin-left: 0;
     }
