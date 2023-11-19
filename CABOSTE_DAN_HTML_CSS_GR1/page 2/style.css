@@ -5,8 +5,8 @@ body, html {
 
 body {
     background-color: #fe8c66;
-    border-left: 60px solid black; /* Bordure noire à gauche */
-    border-right: 60px solid black; /* Bordure noire à droite */
+    border-left: 60px solid black; 
+    border-right: 60px solid black; 
 }
 
 .header-bg {
@@ -27,10 +27,8 @@ h1 {
 h2 {
     font-size: 2.6rem;
     text-align: center;
-    margin-bottom: 80px; /* Augmente l'espace entre h2 et les colonnes */
-}
+    margin-bottom: 80px; 
 
-/* ... Autres styles ... */
 
 .header-bg {
     position: relative;
@@ -52,20 +50,20 @@ h2 {
 .column {
     flex: 1;
     max-width: 450px;
-    margin-right: 80px; /* Ajoutez une marge à droite pour créer de l'espace entre les colonnes */
+    margin-right: 80px; 
     margin-left: 80px ;
-    margin-bottom: 80px; /* Augmente l'espace entre les colonnes */
+    margin-bottom: 80px; 
 }
 
 
 .text {
     text-align: left;
-    margin-bottom: 20px; /* Augmente l'espace entre les paragraphes */
+    margin-bottom: 20px; 
     font-size: 1.5rem;
 }
 
 .image {
-    margin-bottom: 20px; /* Augmente l'espace entre les images et les paragraphes */
+    margin-bottom: 20px; 
 }
 
 .image img {
@@ -77,7 +75,7 @@ h2 {
 .columns {
     display: flex;
 }
-/* ... Autres styles ... */
+
 .column {
     opacity: 0;
     transform: scale(0.5);
@@ -92,11 +90,11 @@ h2 {
 }
 @media only screen and (max-width: 768px) {
     .columns {
-        flex-direction: column; /* Change la direction en colonne pour les écrans plus petits */
+        flex-direction: column; 
     }
 
     .column {
-        max-width: 100%; /* Ajuste la largeur des colonnes pour s'adapter à l'écran */
+        max-width: 100%;
         margin-right: 0;
         margin-left: 0;
     }
