@@ -1,0 +1,103 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #fe8c66;
+    border-left: 60px solid black; /* Bordure noire à gauche */
+    border-right: 60px solid black; /* Bordure noire à droite */
+}
+
+.header-bg {
+    background-image: url('mars-fond.png');
+    background-size: 100% auto; 
+    background-position: center;
+    text-align: center;
+    padding: 40px;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin: 20px 0;
+    color: #fae37c;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.6rem;
+    text-align: center;
+    margin-bottom: 80px; /* Augmente l'espace entre h2 et les colonnes */
+}
+
+/* ... Autres styles ... */
+
+.header-bg {
+    position: relative;
+}
+
+
+.content {
+    padding: 20px;
+    text-align: center;
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.column {
+    flex: 1;
+    max-width: 450px;
+    margin-right: 80px; /* Ajoutez une marge à droite pour créer de l'espace entre les colonnes */
+    margin-left: 80px ;
+    margin-bottom: 80px; /* Augmente l'espace entre les colonnes */
+}
+
+
+.text {
+    text-align: left;
+    margin-bottom: 20px; /* Augmente l'espace entre les paragraphes */
+    font-size: 1.5rem;
+}
+
+.image {
+    margin-bottom: 20px; /* Augmente l'espace entre les images et les paragraphes */
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    max-height: 400px;
+}
+
+.columns {
+    display: flex;
+}
+/* ... Autres styles ... */
+.column {
+    opacity: 0;
+    transform: translateY(-300px);
+    animation: bounceIn 1s ease-in-out forwards;
+}
+
+@keyframes bounceIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+@media only screen and (max-width: 768px) {
+    .columns {
+        flex-direction: column; /* Change la direction en colonne pour les écrans plus petits */
+    }
+
+    .column {
+        max-width: 100%; /* Ajuste la largeur des colonnes pour s'adapter à l'écran */
+        margin-right: 0;
+        margin-left: 0;
+    }
+}
